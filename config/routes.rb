@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'users/index'
+
+  get 'users/new'
+
   get 'users/' => 'users#index'
   post 'users/' => 'users#create'
   get 'users/new' => 'users#new', as: :new_user
